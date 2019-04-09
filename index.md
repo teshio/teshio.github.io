@@ -9,7 +9,6 @@ Portfolio page for a newly qualified dentist. Constructed using jekyll static si
 
 ![screenshot 1](/images/kjmistry-1.png)
 ![screenshot 2](/images/kjmistry-2.png)
-![screenshot 3](/images/kjmistry-3.png)
 
 ## [gravitywellhealth](https://healthreading.azurewebsites.net)
 ASP.NET MVC project, allowing user tracker personal health data
