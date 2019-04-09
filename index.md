@@ -4,6 +4,6 @@
 ## www.preteshmistry.com
 
 
-## kjmistry.co.uk - portfolio page
+## [kjmistry.co.uk](https://kjmistry.co.uk/) - portfolio page
 
-## gravitywellhealth - https://healthreading.azurewebsites.net/
+## [gravitywellhealth](https://healthreading.azurewebsites.net)
