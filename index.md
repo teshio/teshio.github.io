@@ -23,6 +23,6 @@ Information website to help UK train travellers. Has the benefit of showing the 
 ![screenshot](/images/angrycommuter-1.png)
 
 ## [Regensberg University Sports Day 2019](https://teshio.github.io/regensburg-sport/de/)
-A multi-lingual informational site, again created using jekyll static site generator
+A multi-language information site, again created using jekyll static site generator
 
 ![screenshot](/images/sport-1.png)
