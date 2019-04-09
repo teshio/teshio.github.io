@@ -2,9 +2,11 @@
 # Projects
 
 ## [preteshmistry.com](http://www.preteshmistry.com)
+[git](https://github.com/teshio/preteshmistry.com)
 Currently just a placeholder for my first angularjs project
 
 ## [kjmistry.co.uk](https://kjmistry.co.uk/)
+[git](https://github.com/fenkicorp/kjmistry)
 Portfolio page for a newly qualified dentist. Constructed using jekyll static site generator
 
 ![screenshot 1](/images/kjmistry-1.png)
@@ -23,6 +25,7 @@ Information website to help UK train travellers. Has the benefit of showing the 
 ![screenshot](/images/angrycommuter-1.png)
 
 ## [Regensberg University Sports Day 2019](https://teshio.github.io/regensburg-sport/de/)
+[git](https://github.com/teshio/regensburg-sport)
 A multi-language information site, again created using jekyll static site generator
 
 ![screenshot](/images/sport-1.png)
