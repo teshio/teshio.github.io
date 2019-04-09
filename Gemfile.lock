@@ -244,6 +244,7 @@ PLATFORMS
 
 DEPENDENCIES
   github-pages
+  minima
   wdm (>= 0.1.0)
 
 BUNDLED WITH

@@ -1,5 +1,14 @@
 title: Pretesh Mistry
 description: Professional software developer, not so professional traveller
 
-theme: jekyll-theme-slate
+theme: minima
+show_excerpts: true
 google_analytics: UA-138045233-1
+header_pages:
+  - projects.md
+  - contact.md
+
+minima:
+  date_format: "%-d %b %Y"
+  social_links:
+    github: teshio
