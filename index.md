@@ -2,7 +2,7 @@
 # Projects
 
 
-## [www.preteshmistry.com](http://www.preteshmistry.com)
+## [preteshmistry.com](http://www.preteshmistry.com)
 Currently just a placeholder for my first angularjs project
 
 ## [kjmistry.co.uk](https://kjmistry.co.uk/)
