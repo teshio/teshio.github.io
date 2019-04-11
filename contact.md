@@ -6,7 +6,7 @@ permalink: contact
 
 <form
   id="contactForm"
-  action="https://formspree.io/teshio@hotmail.com"
+
   method="POST">
   <input type="hidden" name="_next" value="{{site.url}}/thankyou"/>
 
@@ -22,5 +22,14 @@ permalink: contact
 </form>
 
 <script>
+$(function(){
+  var url = 'https://formspree.io/' +
+    '\u0074\u0065\u0073\u0068\u0069\u006F\u0040\u0068\u006F\u0074\u006D\u0061\u0069\u006C\u002E\u0063\u006F\u006D';
 
+    $('#contactForm').submit(function(){
+    $('#contactForm').attr('action', url);
+    $('#contactForm').submit();
+      return false;
+    });
+});
 </script>
