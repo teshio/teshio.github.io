@@ -6,7 +6,7 @@ theme: minima
 show_excerpts: true
 google_analytics: UA-138045233-1
 header_pages:
-  - projects.md
+  - portfolio.md
   - contact.md
 
 minima:
