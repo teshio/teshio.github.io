@@ -1,7 +1,7 @@
 ---
-title: Projects
+title: Portfolio
 layout: page
-permalink: projects
+permalink: portfolio
 ---
 ## [gravitywellhealth](https://healthreading.azurewebsites.net)
 ASP.NET MVC project, allowing user tracker personal health data
