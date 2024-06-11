@@ -15,7 +15,7 @@ minima:
     github: teshio
 
 github_username: teshio
-linkedin_username: pretesh-j-mistry
+#linkedin_username: pretesh-j-mistry
 plugins:
   - jekyll-seo-tag
   - jekyll-sitemap
