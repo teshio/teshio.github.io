@@ -26,15 +26,6 @@ Currently just a placeholder for my first angularjs project
 
 ---
 
-## [kjmistry.co.uk](https://kjmistry.co.uk/)
-#### [github link](https://github.com/fenkicorp/kjmistry)
-Portfolio page for a newly qualified dentist. Constructed using jekyll static site generator
-
-![screenshot 1](/images/kjmistry-1.png)
-![screenshot 2](/images/kjmistry-2.png)
-
----
-
 ## [Regensberg University Sports Day 2019](https://teshio.github.io/regensburg-sport/de/)
 #### [github link](https://github.com/teshio/regensburg-sport)
 A multi-language information site, again created using jekyll static site generator
