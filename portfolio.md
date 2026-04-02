@@ -18,6 +18,7 @@ permalink: portfolio
     <div class="project-description">
       <p><strong>Newly added:</strong> a smart, commuter-friendly train website created entirely through AI prompting-no manual coding, just iterative prompt design from concept to launch.</p>
       <p>This project showcases rapid product creation using AI as the full build workflow, from structure and copy to final implementation.</p>
+      <p><a class="project-link" href="https://github.com/teshio/train-test-app">View on GitHub</a></p>
     </div>
   </article>
 
