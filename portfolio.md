@@ -21,6 +21,19 @@ permalink: portfolio
     </div>
   </article>
 
+
+  <article class="project-card">
+    <div class="project-card-header">
+      <p class="project-chip">🎮 AI game</p>
+      <h2><a href="https://www.blacktide.lol">Black Tide</a></h2>
+    </div>
+    <img class="project-thumb" src="https://image.thum.io/get/width/1400/noanimate/https://www.blacktide.lol" alt="Black Tide game screenshot">
+    <div class="project-description">
+      <p>A browser-based game created entirely through AI workflows, from concept to gameplay implementation.</p>
+      <p>Music and sound effects were generated with AI as well, with the project inspired by recent world events.</p>
+    </div>
+  </article>
+
   <article class="project-card">
     <div class="project-card-header">
       <p class="project-chip">💪 Wellness app</p>
