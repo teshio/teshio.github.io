@@ -181,12 +181,157 @@ h1, h2, h3, h4 {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 1rem;
+  perspective: 1100px;
+}
+
+.project-card {
+  position: relative;
+  overflow: hidden;
+  isolation: isolate;
+  transition: transform 0.35s ease, border-color 0.35s ease, box-shadow 0.35s ease;
+  box-shadow: 0 14px 30px rgba(4, 6, 16, 0.28);
+  animation: card-pop 0.7s ease both;
+}
+
+.project-card::before,
+.project-card::after {
+  content: "";
+  position: absolute;
+  pointer-events: none;
+}
+
+.project-card::before {
+  inset: -1px;
+  border-radius: inherit;
+  background: linear-gradient(135deg, rgba(9, 210, 255, 0.2), rgba(255, 77, 184, 0.22));
+  opacity: 0;
+  transition: opacity 0.35s ease;
+  z-index: -2;
+}
+
+.project-card::after {
+  width: 48%;
+  height: 220%;
+  left: -70%;
+  top: -58%;
+  background: linear-gradient(120deg, transparent 10%, rgba(255, 255, 255, 0.18) 50%, transparent 90%);
+  transform: rotate(16deg);
+  transition: transform 0.65s ease;
+  z-index: 2;
+}
+
+.project-card:hover,
+.project-card:focus-within {
+  transform: translateY(-8px) rotateX(3deg) rotateY(-2deg);
+  border-color: rgba(9, 210, 255, 0.5);
+  box-shadow: 0 24px 45px rgba(4, 6, 16, 0.45);
+}
+
+.project-card:hover::before,
+.project-card:focus-within::before {
+  opacity: 1;
+}
+
+.project-card:hover::after,
+.project-card:focus-within::after {
+  transform: translateX(300%) rotate(16deg);
+}
+
+.project-card-header {
+  margin-bottom: 0.35rem;
+}
+
+.project-chip {
+  display: inline-flex;
+  align-items: center;
+  margin: 0 0 0.35rem;
+  padding: 0.2rem 0.7rem;
+  border-radius: 999px;
+  font-size: 0.74rem;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #bff4ff;
+  background: rgba(9, 210, 255, 0.14);
+  border: 1px solid rgba(9, 210, 255, 0.3);
+}
+
+.project-card h2 {
+  margin-bottom: 0.55rem;
+  font-size: clamp(1.9rem, 2.2vw, 2.35rem);
+  line-height: 1.15;
+  overflow-wrap: anywhere;
+}
+
+.project-card h2 a {
+  display: block;
+  color: var(--text);
+  text-decoration: none;
+  background-image: linear-gradient(90deg, var(--secondary), var(--accent));
+  background-repeat: no-repeat;
+  background-size: 0 2px;
+  background-position: 0 100%;
+  transition: background-size 0.35s ease, color 0.3s ease;
+}
+
+.project-card:hover h2 a,
+.project-card:focus-within h2 a {
+  color: #f8fbff;
+  background-size: 100% 2px;
+}
+
+.project-link {
+  font-weight: 700;
+}
+
+.project-card img.project-thumb {
+  margin-top: 0.45rem;
+  margin-bottom: 0.95rem;
+}
+
+.project-description > :last-child {
+  margin-bottom: 0;
 }
 
 .project-card img {
   border-radius: 12px;
   margin-top: 0.7rem;
   border: 1px solid rgba(255, 255, 255, 0.15);
+  transition: transform 0.4s ease, filter 0.4s ease;
+}
+
+.project-card:hover img,
+.project-card:focus-within img {
+  transform: scale(1.02);
+  filter: saturate(1.08) brightness(1.06);
+}
+
+.project-card:nth-child(2) { animation-delay: 0.08s; }
+.project-card:nth-child(3) { animation-delay: 0.16s; }
+.project-card:nth-child(4) { animation-delay: 0.24s; }
+.project-card:nth-child(5) { animation-delay: 0.32s; }
+.project-card:nth-child(6) { animation-delay: 0.4s; }
+
+@keyframes card-pop {
+  from {
+    opacity: 0;
+    transform: translateY(16px) scale(0.985);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .project-card,
+  .project-card::before,
+  .project-card::after,
+  .project-card img,
+  .project-card h2 a {
+    animation: none;
+    transition: none;
+  }
 }
 
 #contactForm input,
