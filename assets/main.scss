@@ -230,3 +230,21 @@ h1, h2, h3, h4 {
     margin: 0;
   }
 }
+
+.new-project-highlight {
+  margin: 1rem 0 2rem;
+  padding: 1.3rem 1.4rem;
+  border-radius: 18px;
+  border: 1px solid var(--card-border);
+  background: linear-gradient(140deg, rgba(9, 210, 255, 0.14), rgba(255, 77, 184, 0.1));
+}
+
+.new-project-highlight h2 {
+  margin-bottom: 0.5rem;
+}
+
+.new-project-highlight p {
+  margin-bottom: 0;
+  color: var(--text-soft);
+}
+

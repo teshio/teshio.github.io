@@ -5,10 +5,16 @@ permalink: portfolio
 ---
 
 <div class="portfolio-intro">
-  <p>A playful mix of products, experiments, and shipped ideas—designed to be useful and memorable.</p>
+  <p>A playful mix of products, experiments, and shipped ideas—designed to be useful and memorable. 🚀 New: wheresmetrain.com has just been added.</p>
 </div>
 
 <div class="project-grid">
+  <article class="project-card">
+    <h2><a href="https://www.wheresmetrain.com">wheresmetrain.com</a></h2>
+    <p><strong>Newly added:</strong> a smart, commuter-friendly train website created entirely through AI prompting—no manual coding, just iterative prompt design from concept to launch.</p>
+    <p>This project showcases rapid product creation using AI as the full build workflow, from structure and copy to final implementation.</p>
+  </article>
+
   <article class="project-card">
     <h2><a href="https://healthreading.azurewebsites.net">GravityWellHealth</a></h2>
     <p>A feel-good health companion built in ASP.NET MVC—track habits, spot progress, and stay motivated with a dashboard that keeps wellness simple.</p>
