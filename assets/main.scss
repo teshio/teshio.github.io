@@ -284,6 +284,15 @@ h1, h2, h3, h4 {
   font-weight: 700;
 }
 
+.project-card img.project-thumb {
+  margin-top: 0.45rem;
+  margin-bottom: 0.95rem;
+}
+
+.project-description > :last-child {
+  margin-bottom: 0;
+}
+
 .project-card img {
   border-radius: 12px;
   margin-top: 0.7rem;
