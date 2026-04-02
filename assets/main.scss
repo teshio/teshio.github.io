@@ -161,7 +161,6 @@ h1, h2, h3, h4 {
 }
 
 .post-list > li,
-.project-card,
 #contactForm {
   padding: 1.2rem;
   margin-bottom: 1rem;
@@ -181,12 +180,199 @@ h1, h2, h3, h4 {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 1rem;
+  perspective: 1100px;
+}
+
+.project-card {
+  position: relative;
+  overflow: hidden;
+  isolation: isolate;
+  padding: 0;
+  margin-bottom: 1rem;
+  border-radius: 18px;
+  border: 1px solid var(--card-border);
+  background: rgba(20, 26, 51, 0.72);
+  transition: transform 0.28s ease, border-color 0.28s ease, box-shadow 0.28s ease;
+  box-shadow: 0 12px 26px rgba(4, 6, 16, 0.24);
+  animation: card-pop 0.5s ease both;
+}
+
+.project-card::before,
+.project-card::after {
+  content: "";
+  position: absolute;
+  pointer-events: none;
+}
+
+.project-card::before {
+  inset: -1px;
+  border-radius: inherit;
+  background: linear-gradient(135deg, rgba(9, 210, 255, 0.2), rgba(255, 77, 184, 0.22));
+  opacity: 0;
+  transition: opacity 0.35s ease;
+  z-index: -2;
+}
+
+.project-card::after {
+  width: 48%;
+  height: 220%;
+  left: -70%;
+  top: -58%;
+  background: linear-gradient(120deg, transparent 10%, rgba(255, 255, 255, 0.18) 50%, transparent 90%);
+  transform: rotate(16deg);
+  transition: transform 0.65s ease;
+  z-index: 2;
+}
+
+.project-card:hover,
+.project-card:focus-within {
+  transform: translateY(-4px) scale(1.01);
+  border-color: rgba(9, 210, 255, 0.45);
+  box-shadow: 0 18px 34px rgba(4, 6, 16, 0.34);
+}
+
+.project-card:hover::before,
+.project-card:focus-within::before {
+  opacity: 1;
+}
+
+.project-card:hover::after,
+.project-card:focus-within::after {
+  transform: translateX(300%) rotate(16deg);
+}
+
+.project-card-header {
+  margin: 0;
+  padding: 1rem 1.1rem 0.8rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.09);
+  background: linear-gradient(135deg, rgba(123, 97, 255, 0.14), rgba(9, 210, 255, 0.08));
+}
+
+.project-chip {
+  display: inline-flex;
+  align-items: center;
+  margin: 0 0 0.35rem;
+  padding: 0.2rem 0.7rem;
+  border-radius: 999px;
+  font-size: 0.74rem;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #bff4ff;
+  background: rgba(9, 210, 255, 0.14);
+  border: 1px solid rgba(9, 210, 255, 0.3);
+}
+
+.project-card h2 {
+  margin-bottom: 0;
+  font-size: clamp(1.55rem, 1.75vw, 1.95rem);
+  line-height: 1.15;
+  overflow-wrap: anywhere;
+}
+
+.project-card h2 a {
+  display: block;
+  color: var(--text);
+  text-decoration: none;
+  background-image: linear-gradient(90deg, var(--secondary), var(--accent));
+  background-repeat: no-repeat;
+  background-size: 0 2px;
+  background-position: 0 100%;
+  transition: background-size 0.35s ease, color 0.3s ease;
+}
+
+.project-card:hover h2 a,
+.project-card:focus-within h2 a {
+  color: #f8fbff;
+  background-size: 100% 2px;
+}
+
+.project-link {
+  font-weight: 700;
+}
+
+.project-card img.project-thumb {
+  margin: 0;
+  border-radius: 0;
+}
+
+.project-description {
+  padding: 0.95rem 1.1rem 1.1rem;
+}
+
+.project-description > :last-child {
+  margin-bottom: 0;
 }
 
 .project-card img {
   border-radius: 12px;
   margin-top: 0.7rem;
   border: 1px solid rgba(255, 255, 255, 0.15);
+  transition: transform 0.32s ease, filter 0.32s ease;
+}
+
+.project-card:hover img,
+.project-card:focus-within img {
+  transform: scale(1.01);
+  filter: saturate(1.05) brightness(1.03);
+}
+
+.project-card:nth-child(2) { animation-delay: 0.05s; }
+.project-card:nth-child(3) { animation-delay: 0.1s; }
+.project-card:nth-child(4) { animation-delay: 0.15s; }
+.project-card:nth-child(5) { animation-delay: 0.2s; }
+.project-card:nth-child(6) { animation-delay: 0.25s; }
+.project-card:nth-child(7) { animation-delay: 0.3s; }
+
+@keyframes card-pop {
+  from {
+    opacity: 0;
+    transform: translateY(10px) scale(0.992);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .project-grid {
+    gap: 0.75rem;
+  }
+
+  .project-card-header {
+    padding: 0.8rem 0.9rem 0.7rem;
+  }
+
+  .project-chip {
+    margin-bottom: 0.3rem;
+    font-size: 0.68rem;
+  }
+
+  .project-card h2 {
+    font-size: clamp(1.3rem, 7vw, 1.65rem);
+  }
+
+  .project-description {
+    padding: 0.8rem 0.9rem 0.9rem;
+  }
+
+  .project-description p {
+    margin-bottom: 0.8rem;
+    font-size: 1rem;
+    line-height: 1.55;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .project-card,
+  .project-card::before,
+  .project-card::after,
+  .project-card img,
+  .project-card h2 a {
+    animation: none;
+    transition: none;
+  }
 }
 
 #contactForm input,
