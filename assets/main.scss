@@ -258,9 +258,13 @@ h1, h2, h3, h4 {
 
 .project-card h2 {
   margin-bottom: 0.55rem;
+  font-size: clamp(1.9rem, 2.2vw, 2.35rem);
+  line-height: 1.15;
+  overflow-wrap: anywhere;
 }
 
 .project-card h2 a {
+  display: block;
   color: var(--text);
   text-decoration: none;
   background-image: linear-gradient(90deg, var(--secondary), var(--accent));
