@@ -5,7 +5,7 @@ permalink: portfolio
 ---
 
 <div class="portfolio-intro">
-  <p>A playful mix of products, experiments, and shipped ideas—designed to be useful and memorable. 🚀 New: wheresmetrain.com has just been added.</p>
+  <p>A playful mix of products, experiments, and shipped ideas-designed to be useful and memorable. 🚀 New: wheresmetrain.com has just been added.</p>
 </div>
 
 <div class="project-grid">
@@ -16,7 +16,7 @@ permalink: portfolio
     </div>
     <img class="project-thumb" src="https://image.thum.io/get/width/1400/noanimate/https://www.wheresmetrain.com" alt="wheresmetrain.com homepage screenshot">
     <div class="project-description">
-      <p><strong>Newly added:</strong> a smart, commuter-friendly train website created entirely through AI prompting—no manual coding, just iterative prompt design from concept to launch.</p>
+      <p><strong>Newly added:</strong> a smart, commuter-friendly train website created entirely through AI prompting-no manual coding, just iterative prompt design from concept to launch.</p>
       <p>This project showcases rapid product creation using AI as the full build workflow, from structure and copy to final implementation.</p>
     </div>
   </article>
@@ -28,7 +28,7 @@ permalink: portfolio
     </div>
     <img class="project-thumb" src="/images/health-1.png" alt="GravityWellHealth dashboard screenshot">
     <div class="project-description">
-      <p>A feel-good health companion built in ASP.NET MVC—track habits, spot progress, and stay motivated with a dashboard that keeps wellness simple.</p>
+      <p>A feel-good health companion built in ASP.NET MVC-track habits, spot progress, and stay motivated with a dashboard that keeps wellness simple.</p>
       <img src="/images/health-2.png" alt="GravityWellHealth activity screenshot">
       <img src="/images/health-3.png" alt="GravityWellHealth tracker screenshot">
     </div>
@@ -41,7 +41,7 @@ permalink: portfolio
     </div>
     <img class="project-thumb" src="/images/angrycommuter-1.png" alt="Angry Commuter screenshot">
     <div class="project-description">
-      <p>Built to tame rush-hour chaos—this commuter sidekick gives UK train travelers fast, practical intel (including carriage counts for that perfect platform position).</p>
+      <p>Built to tame rush-hour chaos-this commuter sidekick gives UK train travelers fast, practical intel (including carriage counts for that perfect platform position).</p>
     </div>
   </article>
 
@@ -64,7 +64,7 @@ permalink: portfolio
     </div>
     <img class="project-thumb" src="/images/sport-1.png" alt="Regensberg University Sports Day screenshot">
     <div class="project-description">
-      <p>A high-energy, multi-language event site powered by Jekyll—designed so attendees can jump straight to schedules, details, and game-day essentials.</p>
+      <p>A high-energy, multi-language event site powered by Jekyll-designed so attendees can jump straight to schedules, details, and game-day essentials.</p>
       <p><a class="project-link" href="https://github.com/teshio/regensburg-sport">View on GitHub</a></p>
     </div>
   </article>
@@ -76,7 +76,7 @@ permalink: portfolio
     </div>
     <img class="project-thumb" src="/images/dda-1.png" alt="Design and Development Associates screenshot">
     <div class="project-description">
-      <p>One of my first real-world launches—crafting a polished online home for an architecture and planning studio with a clean, confident visual style.</p>
+      <p>One of my first real-world launches-crafting a polished online home for an architecture and planning studio with a clean, confident visual style.</p>
     </div>
   </article>
 </div>
