@@ -15,7 +15,7 @@ permalink: portfolio
       <p class="project-tag">New • AI-Built</p>
     </header>
     <div class="project-card-media">
-      <img src="https://image.thum.io/get/width/1400/noanimate/https://www.wheresmetrain.com" alt="wheresmetrain.com homepage screenshot">
+      <img src="/images/wheresmetrain-1.png" alt="wheresmetrain.com homepage screenshot">
     </div>
     <div class="project-card-body">
       <p><strong>Newly added:</strong> a smart, commuter-friendly train website created entirely through AI prompting—no manual coding, just iterative prompt design from concept to launch.</p>
