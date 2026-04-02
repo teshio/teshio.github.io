@@ -14,7 +14,7 @@ permalink: portfolio
       <p class="project-chip">🚆 Fresh launch</p>
       <h2><a href="https://www.wheresmetrain.com">wheresmetrain.com</a></h2>
     </div>
-    <img class="project-thumb" src="https://image.thum.io/get/width/1400/noanimate/https://www.wheresmetrain.com" alt="wheresmetrain.com homepage screenshot">
+    <img class="project-thumb" src="images/wheresmetrain-1.png" alt="wheresmetrain.com homepage screenshot">
     <div class="project-description">
       <p><strong>Newly added:</strong> a smart, commuter-friendly train website created entirely through AI prompting-no manual coding, just iterative prompt design from concept to launch.</p>
       <p>This project showcases rapid product creation using AI as the full build workflow, from structure and copy to final implementation.</p>
@@ -27,7 +27,7 @@ permalink: portfolio
       <p class="project-chip">🎮 AI game</p>
       <h2><a href="https://www.blacktide.lol">Black Tide</a></h2>
     </div>
-    <img class="project-thumb" src="https://image.thum.io/get/width/1400/noanimate/https://www.blacktide.lol" alt="Black Tide game screenshot">
+    <img class="project-thumb" src="/images/black-tide-1.png" alt="Black Tide game screenshot">
     <div class="project-description">
       <p>A browser-based game created entirely through AI workflows, from concept to gameplay implementation.</p>
       <p>Music and sound effects were generated with AI as well, with the project inspired by recent world events.</p>
