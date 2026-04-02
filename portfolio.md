@@ -13,6 +13,7 @@ permalink: portfolio
     <h2><a href="https://www.wheresmetrain.com">wheresmetrain.com</a></h2>
     <p><strong>Newly added:</strong> a smart, commuter-friendly train website created entirely through AI prompting—no manual coding, just iterative prompt design from concept to launch.</p>
     <p>This project showcases rapid product creation using AI as the full build workflow, from structure and copy to final implementation.</p>
+    <img src="https://image.thum.io/get/width/1400/noanimate/https://www.wheresmetrain.com" alt="wheresmetrain.com homepage screenshot">
   </article>
 
   <article class="project-card">
