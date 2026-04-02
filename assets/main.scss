@@ -1,33 +1,250 @@
 ---
-# Only the main Sass file needs front matter (the dashes are enough)
 ---
 
 @import "minima";
 
-#contactForm {
-
-  input, textarea {
-    width: 100%;
-  }
-
-  input[type=text], input[type=email], textarea {
-    width: 100%;
-    padding: 12px 20px;
-    margin: 8px 0;
-    box-sizing: border-box;
-    border-radius: 5px;
-  }
-
-  input[type=button], input[type=submit], input[type=reset] {
-    background-color: #4CAF50;
-    border: none;
-    color: white;
-    padding: 16px 32px;
-    text-decoration: none;
-    margin: 4px 2px;
-    cursor: pointer;
-    border-radius: 5px;
-    
-  }
-
+:root {
+  --bg: #0c1022;
+  --bg-soft: #141a33;
+  --text: #edf1ff;
+  --text-soft: #b7c2e2;
+  --primary: #7b61ff;
+  --secondary: #09d2ff;
+  --accent: #ff4db8;
+  --card-border: rgba(255, 255, 255, 0.12);
 }
+
+body {
+  color: var(--text);
+  background:
+    radial-gradient(circle at 15% 15%, rgba(123, 97, 255, 0.35), transparent 35%),
+    radial-gradient(circle at 85% 10%, rgba(9, 210, 255, 0.28), transparent 30%),
+    radial-gradient(circle at 70% 80%, rgba(255, 77, 184, 0.22), transparent 40%),
+    var(--bg);
+  font-family: Inter, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  line-height: 1.7;
+}
+
+a {
+  color: var(--secondary);
+  text-decoration-thickness: 2px;
+  text-underline-offset: 0.2rem;
+}
+
+a:hover {
+  color: #9be8ff;
+}
+
+.wrapper {
+  max-width: 1080px;
+}
+
+.site-header,
+.site-footer,
+.post-list > li,
+.page-content .wrapper > * {
+  position: relative;
+  z-index: 1;
+}
+
+.site-header {
+  border-top: 0;
+  border-bottom: 1px solid var(--card-border);
+  background: rgba(10, 13, 28, 0.85);
+  backdrop-filter: blur(12px);
+}
+
+.site-title {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.65rem;
+  font-weight: 800;
+  letter-spacing: 0.02em;
+  color: var(--text) !important;
+}
+
+.site-title-mark {
+  width: 14px;
+  height: 14px;
+  border-radius: 4px;
+  background: linear-gradient(135deg, var(--primary), var(--accent));
+  box-shadow: 0 0 22px rgba(123, 97, 255, 0.8);
+}
+
+.site-nav .page-link {
+  color: var(--text-soft);
+  border: 1px solid transparent;
+  border-radius: 999px;
+  padding: 0.45rem 1rem;
+  margin-left: 0.4rem;
+  transition: all 0.25s ease;
+}
+
+.site-nav .page-link:hover {
+  color: var(--text);
+  border-color: var(--card-border);
+  background: rgba(123, 97, 255, 0.2);
+  text-decoration: none;
+}
+
+.hero {
+  margin: 2.8rem 0 1rem;
+  padding: 2rem;
+  border-radius: 26px;
+  border: 1px solid var(--card-border);
+  background: linear-gradient(150deg, rgba(123, 97, 255, 0.18), rgba(20, 26, 51, 0.94));
+  box-shadow: 0 18px 45px rgba(4, 6, 16, 0.42);
+}
+
+.hero-kicker {
+  display: inline-block;
+  margin: 0 0 0.8rem;
+  padding: 0.25rem 0.75rem;
+  border-radius: 999px;
+  font-size: 0.85rem;
+  font-weight: 700;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+  color: #ffd6f3;
+  background: rgba(255, 77, 184, 0.2);
+}
+
+.hero h1 {
+  margin-bottom: 1rem;
+  color: var(--text);
+  font-size: clamp(2rem, 4vw, 3.3rem);
+  line-height: 1.08;
+}
+
+.hero h1 span {
+  background: linear-gradient(90deg, var(--secondary), var(--accent));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.hero-intro {
+  color: var(--text-soft);
+  max-width: 70ch;
+}
+
+.hero-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-top: 1.4rem;
+}
+
+.button-primary,
+.button-secondary {
+  display: inline-block;
+  padding: 0.7rem 1.1rem;
+  border-radius: 999px;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.button-primary {
+  color: white;
+  background: linear-gradient(120deg, var(--primary), var(--accent));
+}
+
+.button-secondary {
+  color: var(--text);
+  border: 1px solid var(--card-border);
+  background: rgba(9, 210, 255, 0.1);
+}
+
+.page-heading,
+.post-list-heading,
+h1, h2, h3, h4 {
+  color: var(--text);
+}
+
+.post-list > li,
+.project-card,
+#contactForm {
+  padding: 1.2rem;
+  margin-bottom: 1rem;
+  border-radius: 18px;
+  border: 1px solid var(--card-border);
+  background: rgba(20, 26, 51, 0.72);
+}
+
+.post-meta,
+.footer-col,
+.contact-intro,
+.portfolio-intro p {
+  color: var(--text-soft);
+}
+
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1rem;
+}
+
+.project-card img {
+  border-radius: 12px;
+  margin-top: 0.7rem;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+#contactForm input,
+#contactForm textarea {
+  width: 100%;
+  margin: 0.45rem 0;
+  border-radius: 12px;
+  border: 1px solid var(--card-border);
+  background: rgba(11, 16, 34, 0.86);
+  color: var(--text);
+  padding: 0.8rem 0.9rem;
+}
+
+#contactForm input:focus,
+#contactForm textarea:focus {
+  outline: none;
+  border-color: var(--secondary);
+  box-shadow: 0 0 0 3px rgba(9, 210, 255, 0.22);
+}
+
+#contactForm input[type=submit] {
+  width: auto;
+  cursor: pointer;
+  font-weight: 700;
+  border: 0;
+  color: #fff;
+  background: linear-gradient(120deg, var(--primary), var(--accent));
+}
+
+.site-footer {
+  border-top: 1px solid var(--card-border);
+  background: rgba(8, 10, 22, 0.8);
+}
+
+@media screen and (max-width: 600px) {
+  .hero {
+    padding: 1.2rem;
+  }
+
+  .site-nav .page-link {
+    margin: 0;
+  }
+}
+
+.new-project-highlight {
+  margin: 1rem 0 2rem;
+  padding: 1.3rem 1.4rem;
+  border-radius: 18px;
+  border: 1px solid var(--card-border);
+  background: linear-gradient(140deg, rgba(9, 210, 255, 0.14), rgba(255, 77, 184, 0.1));
+}
+
+.new-project-highlight h2 {
+  margin-bottom: 0.5rem;
+}
+
+.new-project-highlight p {
+  margin-bottom: 0;
+  color: var(--text-soft);
+}
+
