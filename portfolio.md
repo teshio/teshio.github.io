@@ -3,36 +3,43 @@ title: Portfolio
 layout: page
 permalink: portfolio
 ---
-## [gravitywellhealth](https://healthreading.azurewebsites.net)
-ASP.NET MVC project, allowing user tracker personal health data
 
-![screenshot 1](/images/health-1.png)
-![screenshot 2](/images/health-2.png)
-![screenshot 3](/images/health-3.png)
+<div class="portfolio-intro">
+  <p>Selected digital work across design, development, and product thinking.</p>
+</div>
 
----
+<div class="project-grid">
+  <article class="project-card">
+    <h2><a href="https://healthreading.azurewebsites.net">GravityWellHealth</a></h2>
+    <p>ASP.NET MVC web app that helps users track personal health data and habits through a clear, practical dashboard.</p>
+    <img src="/images/health-1.png" alt="GravityWellHealth dashboard screenshot">
+    <img src="/images/health-2.png" alt="GravityWellHealth activity screenshot">
+    <img src="/images/health-3.png" alt="GravityWellHealth tracker screenshot">
+  </article>
 
-## [Angry Commuter](https://birchwoodcommuter.azurewebsites.net)
-Information website to help UK train travellers. Has the benefit of showing the train carriage count to give you that sneaky advantage on the platforms during peak times ;)
+  <article class="project-card">
+    <h2><a href="https://birchwoodcommuter.azurewebsites.net">Angry Commuter</a></h2>
+    <p>Information website for UK train travelers, including carriage count insights for busy peak-time platforms.</p>
+    <img src="/images/angrycommuter-1.png" alt="Angry Commuter screenshot">
+  </article>
 
-![screenshot](/images/angrycommuter-1.png)
+  <article class="project-card">
+    <h2><a href="http://www.preteshmistry.com">preteshmistry.com</a></h2>
+    <p>Early AngularJS project and personal sandbox for experimenting with front-end interaction and content design.</p>
+    <p><a href="https://github.com/teshio/preteshmistry.com">View on GitHub</a></p>
+    <img src="/images/pm-1.png" alt="preteshmistry.com screenshot">
+  </article>
 
----
+  <article class="project-card">
+    <h2><a href="https://teshio.github.io/regensburg-sport/de/">Regensberg University Sports Day 2019</a></h2>
+    <p>Multi-language event website built with Jekyll, focused on clear navigation and quick access to event information.</p>
+    <p><a href="https://github.com/teshio/regensburg-sport">View on GitHub</a></p>
+    <img src="/images/sport-1.png" alt="Regensberg University Sports Day screenshot">
+  </article>
 
-## [preteshmistry.com](http://www.preteshmistry.com)
-#### [github link](https://github.com/teshio/preteshmistry.com)
-Currently just a placeholder for my first angularjs project
-![screenshot 1](/images/pm-1.png)
-
----
-
-## [Regensberg University Sports Day 2019](https://teshio.github.io/regensburg-sport/de/)
-#### [github link](https://github.com/teshio/regensburg-sport)
-A multi-language information site, again created using jekyll static site generator
-
-![screenshot](/images/sport-1.png)
-
-## [Design & Development Associates](http://www.arch-design-plan.co.uk/)
-One of my first websites for a family friend created shortly after university
-
-![screenshot](/images/dda-1.png)
+  <article class="project-card">
+    <h2><a href="http://www.arch-design-plan.co.uk/">Design &amp; Development Associates</a></h2>
+    <p>An early professional website project created after university for a family friend’s architecture and planning business.</p>
+    <img src="/images/dda-1.png" alt="Design and Development Associates screenshot">
+  </article>
+</div>
