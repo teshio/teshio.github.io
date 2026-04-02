@@ -35,6 +35,15 @@ a:hover {
   color: #9be8ff;
 }
 
+a:visited {
+  color: #c7b7ff;
+}
+
+.project-card a:visited,
+.project-card-header a:visited {
+  color: #f2e8ff;
+}
+
 .wrapper {
   max-width: 1080px;
 }
