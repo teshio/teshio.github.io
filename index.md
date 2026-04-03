@@ -12,9 +12,3 @@ list_title: Latest writing
     <a class="button-secondary" href="/contact">Start a Project</a>
   </div>
 </section>
-
-<section class="new-project-highlight">
-  <p class="hero-kicker">New in Portfolio</p>
-  <h2>Just launched: <a href="https://www.wheresmetrain.com">wheresmetrain.com</a></h2>
-  <p>A fresh project now live in my portfolio—built end-to-end using AI prompts with zero hand-written code.</p>
-</section>
