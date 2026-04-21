@@ -1,113 +1,196 @@
 ---
 title: Portfolio
-layout: page
+layout: portfolio
 permalink: portfolio
 ---
 
-<div class="portfolio-intro">
-  <p>A playful mix of products, experiments, and shipped ideas-designed to be useful and memorable. 🚀 New: BodyWatchr has just been added.</p>
-</div>
+<section class="portfolio-hero">
+  <p class="portfolio-kicker">Selected work</p>
+  <h1>Digital products with more room to look, read, and feel finished.</h1>
+  <p class="portfolio-lede">A collection of web products, experiments, and client work shaped around clarity, atmosphere, and practical usefulness.</p>
+</section>
 
-<div class="project-grid">
-  <article class="project-card">
-    <div class="project-card-header">
-      <p class="project-chip">💪 Fitness analytics</p>
-      <h2><a href="https://www.bodywatchr.com" target="_blank" rel="noopener noreferrer">BodyWatchr</a></h2>
+<div class="portfolio-stack">
+  <section class="portfolio-project">
+    <div class="portfolio-copy">
+      <div class="portfolio-meta">
+        <p class="portfolio-chip">Fitness analytics platform</p>
+        <p class="portfolio-badge">AI-created</p>
+      </div>
+      <h2>BodyWatchr</h2>
+      <p class="portfolio-summary">A Fitbit analytics product that turns personal health data into dashboards, trends, and plain-English guidance that feels closer to a coach than a spreadsheet.</p>
+      <p class="portfolio-detail">This project brings together product design, data storytelling, third-party API integration, and full-stack delivery in a single focused experience built to make complex metrics easier to act on.</p>
+      <ul class="portfolio-highlights">
+        <li>React and Vite frontend with a polished dashboard UI</li>
+        <li>Express backend handling OAuth, sync, and metric analysis</li>
+        <li>AI-assisted summaries layered onto real health trends</li>
+      </ul>
+      <div class="portfolio-actions">
+        <a href="https://www.bodywatchr.com" target="_blank" rel="noopener noreferrer">Visit site</a>
+      </div>
     </div>
-    <img class="project-thumb" src="/images/bodywatchr-1.png" alt="BodyWatchr dashboard screenshot">
-    <div class="project-description">
-      <p>BodyWatchr is a full-stack Fitbit analytics app I built to turn raw health data into clear, coach-style insights.</p>
-      <p>The project combines a React, Vite, Tailwind, and shadcn-based frontend with an Express backend that handles Fitbit OAuth, data syncing, metric analysis, and optional AI-generated summaries.</p>
-      <p>I designed the experience around progressive data loading, interactive dashboards, trend exploration, and actionable recommendations rather than static charts.</p>
-      <p>It demonstrates my ability to build polished user interfaces, integrate third-party APIs, structure backend services, and ship a practical end-to-end product that blends data engineering, product thinking, and modern web development for a focused health-tracking experience well.</p>
-      <img src="/images/bodywatchr-2.png" alt="BodyWatchr metrics view screenshot">
-      <img src="/images/bodywatchr-3.png" alt="BodyWatchr trends view screenshot">
+    <div class="portfolio-media">
+      <img class="portfolio-main-shot" src="/images/bodywatchr-1.png" alt="BodyWatchr dashboard screenshot">
+      <div class="portfolio-gallery">
+        <img src="/images/bodywatchr-2.png" alt="BodyWatchr metrics view screenshot">
+        <img src="/images/bodywatchr-3.png" alt="BodyWatchr trends view screenshot">
+      </div>
     </div>
-  </article>
+  </section>
 
-  <article class="project-card">
-    <div class="project-card-header">
-      <p class="project-chip">🚆 Train tracker</p>
-      <h2><a href="https://www.wheresmetrain.com" target="_blank" rel="noopener noreferrer">wheresmetrain</a></h2>
+  <section class="portfolio-project portfolio-project-reverse">
+    <div class="portfolio-copy">
+      <div class="portfolio-meta">
+        <p class="portfolio-chip">Train tracking experience</p>
+        <p class="portfolio-badge">AI-created</p>
+      </div>
+      <h2>wheresmetrain</h2>
+      <p class="portfolio-summary">A commuter-friendly train site designed to answer the practical question quickly: where is the train, and what does that mean for the journey ahead?</p>
+      <p class="portfolio-detail">It also serves as a fast product-making case study, showing how an idea can move from prompt-led exploration to a usable public service with a clear, focused interface.</p>
+      <ul class="portfolio-highlights">
+        <li>Built end-to-end through iterative AI-driven product direction</li>
+        <li>Structured for rapid journey lookup and decision-making</li>
+        <li>Focused on speed, clarity, and commuter utility</li>
+      </ul>
+      <div class="portfolio-actions">
+        <a href="https://www.wheresmetrain.com" target="_blank" rel="noopener noreferrer">Visit site</a>
+        <a href="https://github.com/teshio/train-test-app" target="_blank" rel="noopener noreferrer">View GitHub</a>
+      </div>
     </div>
-    <img class="project-thumb" src="/images/wheresmetrain-1.png" alt="wheresmetrain.com homepage screenshot">
-    <div class="project-description">
-      <p><strong>Newly added:</strong> a smart, commuter-friendly train website created entirely through AI prompting-no manual coding, just iterative prompt design from concept to launch.</p>
-      <p>This project showcases rapid product creation using AI as the full build workflow, from structure and copy to final implementation.</p>
-      <img src="/images/wheresmetrain-2.png" alt="wheresmetrain.com journey results screenshot">
-      <p><a class="project-link" href="https://github.com/teshio/train-test-app" target="_blank" rel="noopener noreferrer">View on GitHub</a></p>
+    <div class="portfolio-media">
+      <img class="portfolio-main-shot" src="/images/wheresmetrain-1.png" alt="wheresmetrain homepage screenshot">
+      <div class="portfolio-gallery">
+        <img src="/images/wheresmetrain-2.png" alt="wheresmetrain journey results screenshot">
+      </div>
     </div>
-  </article>
+  </section>
 
+  <section class="portfolio-project">
+    <div class="portfolio-copy">
+      <div class="portfolio-meta">
+        <p class="portfolio-chip">Browser game experiment</p>
+        <p class="portfolio-badge">AI-created</p>
+      </div>
+      <h2>Black Tide</h2>
+      <p class="portfolio-summary">A web game produced through AI-assisted workflows, from concept and interaction design through to the atmosphere, sound, and final playable result.</p>
+      <p class="portfolio-detail">The project leans into mood and experimentation, showing how generative tools can be directed toward a cohesive experience rather than a loose collection of assets.</p>
+      <ul class="portfolio-highlights">
+        <li>AI-supported ideation, implementation, music, and sound design</li>
+        <li>Gameplay delivered directly in the browser</li>
+        <li>Built as an experiment in end-to-end creative tooling</li>
+      </ul>
+      <div class="portfolio-actions">
+        <a href="https://www.blacktide.lol" target="_blank" rel="noopener noreferrer">Visit site</a>
+      </div>
+    </div>
+    <div class="portfolio-media">
+      <img class="portfolio-main-shot" src="/images/black-tide-1.png" alt="Black Tide game screenshot">
+    </div>
+  </section>
 
-  <article class="project-card">
-    <div class="project-card-header">
-      <p class="project-chip">🎮 AI game</p>
-      <h2><a href="https://www.blacktide.lol" target="_blank" rel="noopener noreferrer">Black Tide</a></h2>
+  <section class="portfolio-project portfolio-project-reverse">
+    <div class="portfolio-copy">
+      <p class="portfolio-chip">Wellness tracker</p>
+      <h2>GravityWellHealth</h2>
+      <p class="portfolio-summary">A health companion designed to make habit tracking feel encouraging rather than clinical, with a simple dashboard and clear day-to-day feedback.</p>
+      <p class="portfolio-detail">The work reflects an early focus on approachable product design: taking routine personal data and shaping it into something lighter, clearer, and easier to return to.</p>
+      <ul class="portfolio-highlights">
+        <li>ASP.NET MVC application with a user-friendly wellness focus</li>
+        <li>Dashboard-led experience for habits and progress</li>
+        <li>Designed to keep health tracking approachable</li>
+      </ul>
+      <div class="portfolio-actions">
+        <a href="https://healthreading.azurewebsites.net" target="_blank" rel="noopener noreferrer">Visit site</a>
+      </div>
     </div>
-    <img class="project-thumb" src="https://image.thum.io/get/width/1400/noanimate/https://www.blacktide.lol" alt="Black Tide game screenshot">
-    <div class="project-description">
-      <p>A browser-based game created entirely through AI workflows, from concept to gameplay implementation.</p>
-      <p>Music and sound effects were generated with AI as well, with the project inspired by recent world events.</p>
+    <div class="portfolio-media">
+      <img class="portfolio-main-shot" src="/images/health-1.png" alt="GravityWellHealth dashboard screenshot">
+      <div class="portfolio-gallery">
+        <img src="/images/health-2.png" alt="GravityWellHealth activity screenshot">
+        <img src="/images/health-3.png" alt="GravityWellHealth tracker screenshot">
+      </div>
     </div>
-  </article>
+  </section>
 
-  <article class="project-card">
-    <div class="project-card-header">
-      <p class="project-chip">💪 Wellness app</p>
-      <h2><a href="https://healthreading.azurewebsites.net" target="_blank" rel="noopener noreferrer">GravityWellHealth</a></h2>
+  <section class="portfolio-project">
+    <div class="portfolio-copy">
+      <p class="portfolio-chip">Commuter helper</p>
+      <h2>Angry Commuter</h2>
+      <p class="portfolio-summary">A rush-hour utility built for UK rail users who need practical information quickly, including the kind of small details that genuinely improve a stressful trip.</p>
+      <p class="portfolio-detail">Its strength is direct usefulness: the product stays focused on helping people make better platform and journey decisions without clutter or ceremony.</p>
+      <ul class="portfolio-highlights">
+        <li>Built around commuter pain points and time-sensitive decisions</li>
+        <li>Includes practical travel intelligence such as carriage details</li>
+        <li>Fast, utility-first interface design</li>
+      </ul>
+      <div class="portfolio-actions">
+        <a href="https://birchwoodcommuter.azurewebsites.net" target="_blank" rel="noopener noreferrer">Visit site</a>
+      </div>
     </div>
-    <img class="project-thumb" src="/images/health-1.png" alt="GravityWellHealth dashboard screenshot">
-    <div class="project-description">
-      <p>A feel-good health companion built in ASP.NET MVC-track habits, spot progress, and stay motivated with a dashboard that keeps wellness simple.</p>
-      <img src="/images/health-2.png" alt="GravityWellHealth activity screenshot">
-      <img src="/images/health-3.png" alt="GravityWellHealth tracker screenshot">
+    <div class="portfolio-media">
+      <img class="portfolio-main-shot" src="/images/angrycommuter-1.png" alt="Angry Commuter screenshot">
     </div>
-  </article>
+  </section>
 
-  <article class="project-card">
-    <div class="project-card-header">
-      <p class="project-chip">⚡ Commuter helper</p>
-      <h2><a href="https://birchwoodcommuter.azurewebsites.net" target="_blank" rel="noopener noreferrer">Angry Commuter</a></h2>
+  <section class="portfolio-project portfolio-project-reverse">
+    <div class="portfolio-copy">
+      <p class="portfolio-chip">Frontend playground</p>
+      <h2>preteshmistry.com</h2>
+      <p class="portfolio-summary">An early AngularJS project that captures the stage where curiosity turned into real momentum: experimenting with interactivity, layout, and the feel of the web as a medium.</p>
+      <p class="portfolio-detail">It matters less as a polished end product and more as a marker of direction, showing the roots of a long-running interest in expressive interfaces and hands-on making.</p>
+      <ul class="portfolio-highlights">
+        <li>Built during an early exploratory phase of frontend work</li>
+        <li>Centered on experimentation and interaction</li>
+        <li>Represents the origin point for later product work</li>
+      </ul>
+      <div class="portfolio-actions">
+        <a href="http://www.preteshmistry.com" target="_blank" rel="noopener noreferrer">Visit site</a>
+        <a href="https://github.com/teshio/preteshmistry.com" target="_blank" rel="noopener noreferrer">View GitHub</a>
+      </div>
     </div>
-    <img class="project-thumb" src="/images/angrycommuter-1.png" alt="Angry Commuter screenshot">
-    <div class="project-description">
-      <p>Built to tame rush-hour chaos-this commuter sidekick gives UK train travelers fast, practical intel (including carriage counts for that perfect platform position).</p>
+    <div class="portfolio-media">
+      <img class="portfolio-main-shot" src="/images/pm-1.png" alt="preteshmistry.com screenshot">
     </div>
-  </article>
+  </section>
 
-  <article class="project-card">
-    <div class="project-card-header">
-      <p class="project-chip">🧪 Early experiment</p>
-      <h2><a href="http://www.preteshmistry.com" target="_blank" rel="noopener noreferrer">preteshmistry.com</a></h2>
+  <section class="portfolio-project">
+    <div class="portfolio-copy">
+      <p class="portfolio-chip">Event website</p>
+      <h2>Regensburg University Sports Day 2019</h2>
+      <p class="portfolio-summary">A multilingual Jekyll event site designed to keep information obvious and energy high, helping attendees reach schedules, logistics, and essentials without friction.</p>
+      <p class="portfolio-detail">This was a good example of structure-led design: a project where clarity, pacing, and usability mattered more than visual excess because the site had to work under real event pressure.</p>
+      <ul class="portfolio-highlights">
+        <li>Jekyll-powered multi-language event experience</li>
+        <li>Built for fast access to schedules and key information</li>
+        <li>Designed around clarity for live event audiences</li>
+      </ul>
+      <div class="portfolio-actions">
+        <a href="https://teshio.github.io/regensburg-sport/de/" target="_blank" rel="noopener noreferrer">Visit site</a>
+        <a href="https://github.com/teshio/regensburg-sport" target="_blank" rel="noopener noreferrer">View GitHub</a>
+      </div>
     </div>
-    <img class="project-thumb" src="/images/pm-1.png" alt="preteshmistry.com screenshot">
-    <div class="project-description">
-      <p>My early AngularJS playground: lots of curiosity, lots of front-end tinkering, and the spark that pushed me deeper into interactive web experiences.</p>
-      <p><a class="project-link" href="https://github.com/teshio/preteshmistry.com" target="_blank" rel="noopener noreferrer">View on GitHub</a></p>
+    <div class="portfolio-media">
+      <img class="portfolio-main-shot" src="/images/sport-1.png" alt="Regensburg University Sports Day screenshot">
     </div>
-  </article>
+  </section>
 
-  <article class="project-card">
-    <div class="project-card-header">
-      <p class="project-chip">🏆 Event site</p>
-      <h2><a href="https://teshio.github.io/regensburg-sport/de/" target="_blank" rel="noopener noreferrer">Regensberg University Sports Day 2019</a></h2>
+  <section class="portfolio-project portfolio-project-reverse">
+    <div class="portfolio-copy">
+      <p class="portfolio-chip">Client launch</p>
+      <h2>Design &amp; Development Associates</h2>
+      <p class="portfolio-summary">One of my early client-facing launches, created to give an architecture and planning studio a clean, credible digital presence.</p>
+      <p class="portfolio-detail">The work sits in the portfolio as an important early professional milestone: translating a real client's identity into something clear, polished, and fit for public use.</p>
+      <ul class="portfolio-highlights">
+        <li>Website for an architecture and planning practice</li>
+        <li>Focused on trust, clarity, and professional presentation</li>
+        <li>Represents an early real-world delivery project</li>
+      </ul>
+      <div class="portfolio-actions">
+        <a href="http://www.arch-design-plan.co.uk/" target="_blank" rel="noopener noreferrer">Visit site</a>
+      </div>
     </div>
-    <img class="project-thumb" src="/images/sport-1.png" alt="Regensberg University Sports Day screenshot">
-    <div class="project-description">
-      <p>A high-energy, multi-language event site powered by Jekyll-designed so attendees can jump straight to schedules, details, and game-day essentials.</p>
-      <p><a class="project-link" href="https://github.com/teshio/regensburg-sport" target="_blank" rel="noopener noreferrer">View on GitHub</a></p>
+    <div class="portfolio-media">
+      <img class="portfolio-main-shot" src="/images/dda-1.png" alt="Design and Development Associates screenshot">
     </div>
-  </article>
-
-  <article class="project-card">
-    <div class="project-card-header">
-      <p class="project-chip">🏛️ Client launch</p>
-      <h2><a href="http://www.arch-design-plan.co.uk/" target="_blank" rel="noopener noreferrer">Design &amp; Development Associates</a></h2>
-    </div>
-    <img class="project-thumb" src="/images/dda-1.png" alt="Design and Development Associates screenshot">
-    <div class="project-description">
-      <p>One of my first real-world launches-crafting a polished online home for an architecture and planning studio with a clean, confident visual style.</p>
-    </div>
-  </article>
+  </section>
 </div>

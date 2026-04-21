@@ -4,3 +4,4 @@ _site/
 .jekyll-metadata
 *.bak
 Gemfile.lock
+.jekyll-serve.out.log
